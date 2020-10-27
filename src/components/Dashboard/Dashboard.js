@@ -5,12 +5,19 @@ import About from "../Pages/About";
 import Resume from "../Pages/Resume";
 import Works from "../Pages/Works";
 // import Testimonials from '../Pages/Testimonials'
+import Navbar from "../Navbar";
+import Background from './wp.jpg'
 
 const Dashboard = () => {
   return (
-    <section class="hero has-background-dark is-fullheight">
-      <div class="hero-body">
-        <div class="container is-widescreen">
+    <section class="hero has-background-dark is-fullheight" style={{backgroundImage: `linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)), url(${Background})`}}>
+    
+      <div className="hero-head">
+        <Navbar />
+      </div>
+      <div class="hero-body" >
+        <div class="container is-widescreen" >
+        
           <Switch>
             <Route exact path="/resume/" component={Homepage} />
             <Route exact path="/resume/about" component={About} />
@@ -20,13 +27,11 @@ const Dashboard = () => {
           </Switch>
         </div>
       </div>
-      <footer className="footer has-background-grey-dark">
+      {/* <footer className="footer has-background-grey-dark">
         <div className="content has-text-centered">
-          <p className="has-text-grey">
-            Handcrafted by Douglas
-          </p>
+          <p className="has-text-grey">Handcrafted by Douglas</p>
         </div>
-      </footer>
+      </footer> */}
     </section>
   );
 };

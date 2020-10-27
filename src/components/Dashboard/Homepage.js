@@ -11,6 +11,7 @@ const Homepage = () => {
     const email = <FontAwesomeIcon icon={faEnvelope} className="fa-2x" />
     return (
         <div className="columns">
+        
             <div className="column is-half">
                 <h1 class="title has-text-white">
                     Hi! I'm Douglas
