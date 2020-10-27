@@ -24,12 +24,12 @@ const Navbar = () => {
                     <Link className="navbar-item" to='/resume/about'>About</Link>
                     <Link className="navbar-item" to='/resume/resume'>Resume</Link>
                     <Link className="navbar-item" to='/resume/works'>Works</Link>
-                    <Link className="navbar-item" to='/resume/testimonials'>Testimonials</Link>
+                    {/* <Link className="navbar-item" to='/resume/testimonials'>Testimonials</Link> */}
                 </div>
                 <div className="navbar-end">
                     <div className="navbar-item">
                         <div className="buttons">
-                            <button onClick={() => setModal(true)} className="button is-dark is-light is-outlined is-inverted is-small">Contact Me</button>
+                            <button onClick={() => setModal(true)} className="button is-small is-light is-outlined">Contact Me</button>
                         </div>
                     </div>
                 </div>
