@@ -11,7 +11,7 @@ const Dashboard = () => {
     return (
         <section class="hero has-background-dark is-fullheight">
           <div class="hero-body">
-            <div class="container">
+            <div class="container is-widescreen">
                 <Switch>
                     <Route exact path='/' component={Homepage} />
                     <Route exact path='/about' component={About} />
